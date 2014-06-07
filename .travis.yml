@@ -1,0 +1,9 @@
+deploy:
+  provider: rubygems
+  api_key:
+    secure: "DsYnX0Ju3juHWMJLUfWh3fUEfXpTq8Ifpsm0xP4GAxpZbt6OHt2thtUdnOlCuvE7PwTLu1noj2BmKXMdrZf2p3CLOcvG2HH3Dhlizrxm6bmRK7EBw+OjP5udSg++TDddeBjJcB7RbNX898gOhr9OdzktibtBmwDsbHyCH3F8dm4="
+language: ruby
+rvm:
+  - 2.1.1
+services:
+  - memcached
