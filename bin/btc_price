@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$:.push("lib")
+
+require "btc_price"
+
+puts BtcPrice::Runner.run
