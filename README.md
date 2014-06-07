@@ -1,4 +1,8 @@
+[![Build Status](https://travis-ci.org/mecampbellsoup/btc_price.png?branch=master)](https://travis-ci.org/mecampbellsoup/btc_price)
+
 # BTC Price
+
+![Because bitcoin is awesome!](http://media.coindesk.com/2014/03/47660272.jpg)
 
 ## What does it do?
 
@@ -18,9 +22,9 @@ Next, start (and immediately background) your cache process with:
 
 `memcached -p 11211 &`;
 
-and finally you can run the executable:
+and finally you can run the gem's executable:
 
-`./bin/btc_price`.
+`btc_price`.
 
 You should see some content in STDOUT like this:
 
@@ -29,7 +33,7 @@ External services status: Good.
 Current BTC price: $622.21.
 ```
 
-If you run the executable again (`./bin/btc_price`), you'll notice it's much faster. This is because the library uses [`memcached`](https://github.com/evan/memcached) to cache the BTC price and avoid making redundant API requests.
+If you run the executable again (`btc_price`), you'll notice it's much faster. This is because the library uses [`memcached`](https://github.com/evan/memcached) to cache the BTC price and avoid making redundant API requests.
 
 # Why did I write this library?
 
