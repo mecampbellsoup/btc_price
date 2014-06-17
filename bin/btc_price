@@ -4,4 +4,4 @@ $:.push("lib")
 
 require "btc_price"
 
-puts BtcPrice::Runner.run
+puts BtcPrice.run

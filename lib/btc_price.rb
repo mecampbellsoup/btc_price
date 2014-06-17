@@ -1,9 +1,11 @@
-require "btc_price/version"
-require "btc_price/cache"
-require "btc_price/coinbase_gateway"
-require "btc_price/runner"
-require "btc_price/services_health"
-require "btc_price/price"
+current_path = File.expand_path("../", __FILE__)
+Dir[File.join(current_path, "btc_price/**/*.rb")].each { |f| require f }
 
 module BtcPrice
+  class << self
+    def run
+      "External services status: #{(ServicesHealth.new.healthy? ? 'Good.' : 'Bad.')}"\
+      "\nCurrent BTC price: $#{sprintf("%.2f", Price.current_price)}."
+    end
+  end
 end
