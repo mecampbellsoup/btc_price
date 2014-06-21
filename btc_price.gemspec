@@ -21,11 +21,11 @@ email notifications at price levels of your choosing.
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "memcached"
+  spec.add_runtime_dependency "memcached", "~> 1.8"
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "mocha"
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "rake", "~> 10.3"
+  spec.add_development_dependency "mocha", "~> 1.1"
+  spec.add_development_dependency "pry", "~> 0.9"
+  spec.add_development_dependency "minitest", "~> 5.3"
 end
