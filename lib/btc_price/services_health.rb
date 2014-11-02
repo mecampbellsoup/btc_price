@@ -17,7 +17,7 @@ module BtcPrice
 
     def check_status(response)
       # Inspect the response status
-      response.status.first == "200" ? true : false
+      response.status.first == "200"
     end
   end
 end
